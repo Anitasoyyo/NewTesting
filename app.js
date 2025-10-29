@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Endpoint solicitado
 app.get("/api/hello", (req, res) => {
-  res.status(200).json({ message: "Hello world" });
+  res.status(200).json({ message: "Hello World" });
 });
 
 // Endpoint POST /api/echo

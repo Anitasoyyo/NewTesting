@@ -29,7 +29,7 @@ describe("GET /api/hello", () => {
   it("responds with Hello World", async () => {
     const response = await request(app).get("/api/hello");
     expect(response.statusCode).toBe(200);
-    expect(response.body.message).toBe("Hello world");
+    expect(response.body.message).toBe("Hello World");
   });
 });
 
@@ -71,10 +71,10 @@ describe("User API Functional Test", () => {
   });
 });
 
-describe('TDD for Greeting Endpoint', () => {
-  it('should return a greeting message', async () => {
-    const response = await request(app).get('/api/greeting');
+describe("TDD for Greeting Endpoint", () => {
+  it("should return a greeting message", async () => {
+    const response = await request(app).get("/api/greeting");
     expect(response.statusCode).toBe(200);
-    expect(response.text).toBe('Greeting');
+    expect(response.text).toBe("Greeting");
   });
 });
